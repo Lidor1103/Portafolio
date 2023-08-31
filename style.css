@@ -247,7 +247,7 @@ section {
 
 .welcome-text {
     display: grid;
-    place-items: center;
+    flex-direction: column;
 }
 
 .welcome-text>p {
@@ -311,6 +311,12 @@ section {
         height: calc(100vh - 200px);
         place-content: center;
         gap: 30px;
+    }
+    .welcome-text {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
