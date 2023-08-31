@@ -208,8 +208,11 @@ section {
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
     object-fit: cover;
+    min-height: 200px;
 }
-
+.welcome-text >p > span >img{ 
+    transform: rotate(90deg);
+}
 .welcome-wave {
     width: 100%;
     bottom: 0;
