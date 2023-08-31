@@ -66,9 +66,6 @@ header {
 
 .conteiner-one {
     height: 100vh;
-    background: #00416A;
-    background: -webkit-linear-gradient(to bottom, var(--paleta3), #Ffffff, #Ffffff, #Ffffff, #Ffffff);
-    background: linear-gradient(to bottom, var(--paleta3), #Ffffff, #Ffffff, #Ffffff, #Ffffff);
 }
 
 .nav-menu {
@@ -82,15 +79,14 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    backdrop-filter: blur(4px);
-    background: #ddd;
-    background-color: rgba(47, 47, 47, .5);
-    box-shadow: 0 3px 20px 3px var(--paleta2);
     border-radius: 20px;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    backdrop-filter: blur(4px);
+    background-color: rgba(47, 47, 47, .5);
+    box-shadow: 0 3px 20px 3px var(--paleta7);
 }
 
 .conteiner-menu-icon {
@@ -215,7 +211,6 @@ section {
     width: 100%;
     margin-top: 0 auto;
 }
-
 .contenedor-welcome {
     display: grid;
     max-width: 90%;
@@ -228,16 +223,15 @@ section {
 
 .welcome-img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .welcome-img>img {
     width: 80%;
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
-
+    object-fit: cover;
 }
 
 .welcome-wave {
@@ -252,9 +246,8 @@ section {
 }
 
 .welcome-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 .welcome-text>p {
@@ -309,6 +302,17 @@ section {
     }
 
 }
+@media (max-width: 960px) {
+    .contenedor-welcome {
+        display: grid;
+        max-width: 90%;
+        grid-template-columns: 100%;
+        margin: 110px auto 0;
+        height: calc(100vh - 200px);
+        place-content: center;
+        gap: 30px;
+    }
+}
 
 .conteiner-two {
     width: 100%;
@@ -349,7 +353,6 @@ section {
 .contenedor-about {
     width: 100%;
     background-color: #Ffffff;
-    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
