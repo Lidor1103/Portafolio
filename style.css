@@ -182,6 +182,7 @@ nav>ul>li {
     .nav-ul>li {
         padding: 20px 0;
         font-size: 20px;
+        margin-left: 0;
     }
     .link{
         color: var(--paleta6);
