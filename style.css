@@ -21,17 +21,9 @@ hr {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f2f0ee;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #00416A;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
 }
 
 :root {
@@ -69,7 +61,13 @@ header {
     display: flex;
     justify-content: center;
 }
-
+.conteiner-one{
+    height: 100vh;
+    background: #00416A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
+    background: linear-gradient(to bottom, #01c38e, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+}
 .nav-menu {
     width: 100%;
     max-width: 90%;
