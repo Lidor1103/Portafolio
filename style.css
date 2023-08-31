@@ -32,6 +32,7 @@ body {
     --paleta3: #01c38e;
     --paleta4: #Ffffff;
     --paleta5: #f8f8f0;
+    --paleta6: #E4E5E6;
 }
 
 h1 {
@@ -64,9 +65,8 @@ header {
 .conteiner-one{
     height: 100vh;
     background: #00416A;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
-    background: linear-gradient(to bottom, #01c38e, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: linear-gradient(to bottom, #01c38e,#E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
 }
 .nav-menu {
     width: 100%;
@@ -259,7 +259,6 @@ section {
 @media (max-width: 570px) {
     .welcome-text {
         text-align: center;
-        background-color: green;
     }
 
     .welcome-text>p {
@@ -276,7 +275,6 @@ section {
 
     .welcome-img {
         max-width: 300px;
-        background-color: red;
     }
 
 }
@@ -286,7 +284,7 @@ section {
 /*! =================================================*/
 .contenedor-about {
     width: 100%;
-    background-color: var(--paleta4);
+    background-color: var(--paleta6);
     height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
