@@ -25,9 +25,12 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #00416A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6  , #E4E5E6  , #E4E5E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00416A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
 }
 
@@ -71,26 +74,27 @@ header {
     width: 100%;
     max-width: 90%;
     min-width: 90px;
-    margin: 10px auto; 
+    margin: 10px auto;
     height: 80px;
     padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background-color: rgba(194,189,189,.2);
+    background-color: rgba(194, 189, 189, .2);
     backdrop-filter: blur(10px);
     border-radius: 40px;
     border: solid 1px var(--paleta1);
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.conteiner-menu-icon{
+.conteiner-menu-icon {
     text-align: right;
 }
+
 .menu-icon {
     line-height: 70px;
     cursor: pointer;
@@ -107,11 +111,13 @@ nav>a {
 nav>a>img {
     height: 100%;
     transition: 0.3s all;
-    
+
 }
+
 nav>a>img:hover {
     transform: scale(1.2);
 }
+
 .nav-ul {
     display: flex;
 }
@@ -172,6 +178,8 @@ nav>ul>li {
         left: 150%;
         transition: left 0.3;
         padding-top: 30px;
+        background-color: rgba(194, 189, 189, .2);
+        backdrop-filter: blur(10px);
     }
 
     .nav-ul>li {
@@ -210,7 +218,7 @@ section {
 
 .welcome-img {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     min-width: 190px;
     max-width: 680px;
 }
@@ -219,7 +227,7 @@ section {
     width: 80%;
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
-    
+
 }
 
 .welcome-wave {
@@ -249,26 +257,32 @@ section {
     padding-right: 70px;
     line-height: 1.4;
 }
+
 @media (max-width: 570px) {
-    .welcome-text{
+    .welcome-text {
         text-align: center;
         background-color: green;
     }
-    .welcome-text > p{
+
+    .welcome-text>p {
         padding: 0;
     }
-    .welcome-text > h2{
-       font-size: 30px;
+
+    .welcome-text>h2 {
+        font-size: 30px;
     }
-    .welcome-text > h1{
+
+    .welcome-text>h1 {
         font-size: 40px;
-     }
-    .welcome-img{
+    }
+
+    .welcome-img {
         max-width: 300px;
         background-color: red;
     }
-    
+
 }
+
 /*! =================================================*/
 /*! =================== ABOUT ================== */
 /*! =================================================*/
@@ -359,7 +373,7 @@ section {
     justify-content: center;
     margin: 20px auto 20px auto;
     min-width: 100px;
-    
+
     height: calc(100vh - 200px);
     width: 70%;
     border-bottom: 0;
@@ -370,7 +384,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(100px); /* Agrega el efecto de desenfoque */
+    backdrop-filter: blur(100px);
+    /* Agrega el efecto de desenfoque */
 }
 
 
