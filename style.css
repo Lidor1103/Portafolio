@@ -36,17 +36,17 @@ body {
 }
 
 h1 {
-    color: var(--paleta3);
-    font-size: 65px;
-    margin: 0 0 10px 0;
-    font-family: 'Roboto', sans-serif;
+    color: var(--paleta1);
+    font-size: 100px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 h2 {
     color: var(--paleta3);
     font-size: 40px;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*! =================================================*/
@@ -65,8 +65,8 @@ header {
 .conteiner-one{
     height: 100vh;
     background: #00416A;
-    background: -webkit-linear-gradient(to bottom, #01c38e, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
-    background: linear-gradient(to bottom, #01c38e,#E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6, #E4E5E6);
+    background: -webkit-linear-gradient(to bottom, #01c38e,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: linear-gradient(to bottom, #01c38e,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
 }
 .nav-menu {
     width: 100%;
@@ -129,7 +129,7 @@ nav>ul>li {
     position: relative;
     color: black;
     text-decoration: none;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     cursor: pointer;
     transition: all 0.5s ease;
     padding: 10px 10px;
@@ -205,20 +205,20 @@ section {
 }
 
 .contenedor-welcome {
-    margin-top: 80px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: 30% 60%;
+    margin: 120px auto 0;
     height: calc(100vh - 200px);
+    place-content: center;
+    gap: 30px;
 }
 
 .welcome-img {
+    width: 100%;
     display: flex;
     justify-content: center;
-    min-width: 190px;
-    max-width: 680px;
+    align-items: center;
 }
 
 .welcome-img>img {
@@ -240,17 +240,15 @@ section {
 }
 
 .welcome-text {
-    max-width: 600px;
-    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .welcome-text>p {
-    color: var(--paleta4);
-    font-family: 'Encode Sans', sans-serif;
-    font-size: 18px;
+    color: var(--paleta1);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 23px;
     margin: 0;
     padding-right: 70px;
     line-height: 1.4;
@@ -284,7 +282,7 @@ section {
 /*! =================================================*/
 .contenedor-about {
     width: 100%;
-    background-color: var(--paleta6);
+    background-color: #Ffffff;
     height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
@@ -315,7 +313,7 @@ section {
 
 .about-text>p {
     color: var(--paleta2);
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 18px;
     margin-top: 15px;
     line-height: 1.4;
