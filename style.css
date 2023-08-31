@@ -29,7 +29,7 @@ body {
 :root {
     --paleta1: #1a1e29;
     --paleta2: #132d46;
-    --paleta3: #01c38e;
+    --paleta3: #29d38d;
     --paleta4: #Ffffff;
     --paleta5: #f8f8f0;
     --paleta6: #E4E5E6;
@@ -65,8 +65,8 @@ header {
 .conteiner-one{
     height: 100vh;
     background: #00416A;
-    background: -webkit-linear-gradient(to bottom, #01c38e,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
-    background: linear-gradient(to bottom, #01c38e,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: -webkit-linear-gradient(to bottom, #29d38d,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: linear-gradient(to bottom, #29d38d,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
 }
 .nav-menu {
     width: 100%;
@@ -165,17 +165,17 @@ nav>ul>li {
     .nav-ul {
         flex-direction: column;
         align-items: center;
-        top: 70px;
+        top: 75px;
         position: fixed;
         width: 100%;
-        padding: 0;
         margin: 0;
         left: 0;
-        height: calc(100vh - 90px);
+        height: auto;
+        padding: 50px 0;
         left: 150%;
         transition: left 0.3;
-        padding-top: 30px;
-        background-color: rgb(3, 3, 3);
+        border-radius: 30px;
+        background-color: var(--paleta1);
         backdrop-filter: blur(10px);
     }
 
@@ -185,6 +185,9 @@ nav>ul>li {
     }
     .link{
         color: var(--paleta6);
+    }
+    .link:hover{
+        color: #Ffffff;
     }
     .nav-menu-visible {
         transition: left 0.3;
@@ -254,7 +257,21 @@ section {
     padding-right: 70px;
     line-height: 1.4;
 }
+.welcome-text >h2{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10ch;
+    animation: typing 2s steps(50), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
 
+@keyframes typing{
+    from {width: 0}
+}
+@keyframes blink{
+    50% {border-color:  transparent}
+}
 @media (max-width: 570px) {
     .welcome-text {
         text-align: center;
