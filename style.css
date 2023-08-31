@@ -9,6 +9,8 @@ html {
     margin: 0;
     padding: 0;
     list-style: none;
+    
+    text-decoration: none;
 }
 
 hr {
@@ -31,9 +33,7 @@ body {
     --paleta2: #132d46;
     --paleta3: #FE4019;
     --paleta4: #Ffffff;
-    --paleta5: #f8f8f0;
-    --paleta6: #E4E5E6;
-    --paleta7: #36373C;
+    --paleta5: #36373C;
 }
 
 h1 {
@@ -53,19 +53,9 @@ h2 {
 /*! =================================================*/
 /*! =================== NAV ================== */
 /*! =================================================*/
-header {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-}
-
 .conteiner-one {
     height: 100vh;
+
 }
 
 .nav-menu {
@@ -73,31 +63,25 @@ header {
     max-width: 90%;
     min-width: 90px;
     margin: 10px auto;
-    height: 80px;
+    height: 75px;
     padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1;
     border-radius: 20px;
     position: fixed;
-    top: 0;
     left: 50%;
     transform: translateX(-50%);
     backdrop-filter: blur(4px);
     background-color: rgba(47, 47, 47, .5);
-    box-shadow: 0 3px 20px 3px var(--paleta7);
-}
-
-.conteiner-menu-icon {
-    text-align: right;
+    box-shadow: 0 3px 15px 3px rgba(0,0,0,.15);
 }
 
 .menu-icon {
-    line-height: 70px;
     cursor: pointer;
     color: var(--paleta1);
-    font-size: 30px;
+    font-size: 25px;
     display: none;
     opacity: 0;
 }
@@ -109,7 +93,6 @@ nav>a {
 nav>a>img {
     height: 100%;
     transition: 0.3s all;
-
 }
 
 nav>a>img:hover {
@@ -128,7 +111,6 @@ nav>ul>li {
 .link {
     position: relative;
     color: var(--paleta4);
-    text-decoration: none;
     font-family: 'Urbanist', sans-serif;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -143,7 +125,7 @@ nav>ul>li {
     bottom: 0;
     background-color: var(--paleta1);
     left: 50%;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s linear;
     transform: translateX(-50%) scaleX(1);
 }
 
@@ -155,6 +137,10 @@ nav>ul>li {
     .menu-icon {
         display: block;
         opacity: 1;
+    }
+    .menu-icon:active{
+        transition: .1s ease;
+        transform: rotate(90deg);
     }
 
     .nav-menu {
@@ -171,30 +157,20 @@ nav>ul>li {
         margin: 0;
         left: 0;
         height: auto;
-        padding: 40px 0;
-        left: 150%;
-        transition: left 0.3;
+        padding: 30px 0;
+        left: -110%;
+        transition: left 0.8s;
         border-radius: 30px;
         background-color: var(--paleta1);
-        backdrop-filter: blur(10px);
     }
 
     .nav-ul>li {
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 20px;
-        margin-left: 0;
-    }
-
-    .link {
-        color: var(--paleta6);
-    }
-
-    .link:hover {
-        color: #Ffffff;
+        margin: 0;
     }
 
     .nav-menu-visible {
-        transition: left 0.3;
         left: 0;
     }
 
