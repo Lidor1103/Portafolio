@@ -98,10 +98,11 @@ header {
     width: 50px;
     list-style: 80px;
     cursor: pointer;
-    display: none;
     color: white;
     font-size: 30px;
-    line-height: 80px;
+    line-height: 70px;
+    display: none;
+    opacity: 0;
 }
 
 nav>a {
@@ -154,11 +155,12 @@ nav>ul>li {
 @media (max-width: 960px) {
     .menu-icon {
         display: block;
+        opacity: 1;
     }
 
     .nav-menu {
         padding: 0 40px;
-        height: 50px;
+        height: 70px;
     }
 
     .nav-ul {
