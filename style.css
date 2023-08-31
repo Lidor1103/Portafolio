@@ -29,7 +29,7 @@ body {
 :root {
     --paleta1: #1a1e29;
     --paleta2: #132d46;
-    --paleta3: #29d38d;
+    --paleta3: #21A8F4;
     --paleta4: #Ffffff;
     --paleta5: #f8f8f0;
     --paleta6: #E4E5E6;
@@ -65,8 +65,8 @@ header {
 .conteiner-one{
     height: 100vh;
     background: #00416A;
-    background: -webkit-linear-gradient(to bottom, #29d38d,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
-    background: linear-gradient(to bottom, #29d38d,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: -webkit-linear-gradient(to bottom, #21A8F4,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
+    background: linear-gradient(to bottom, #21A8F4,#Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff, #Ffffff);
 }
 .nav-menu {
     width: 100%;
