@@ -256,28 +256,6 @@ section {
     }
 }
 
-@media (max-width: 570px) {
-    .welcome-text {
-        text-align: center;
-    }
-
-    .welcome-text>p {
-        padding: 0;
-    }
-
-    .welcome-text>h2 {
-        font-size: 30px;
-    }
-
-    .welcome-text>h1 {
-        font-size: 40px;
-    }
-
-    .welcome-img {
-        max-width: 300px;
-    }
-
-}
 @media (max-width: 960px) {
     .contenedor-welcome {
         display: grid;
@@ -288,11 +266,16 @@ section {
         place-content: center;
         gap: 30px;
     }
+
     .welcome-text {
+        text-align: center;
         display: grid;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .welcome-text >p {
+        padding: 0;
     }
 }
 
