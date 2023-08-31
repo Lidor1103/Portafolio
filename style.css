@@ -92,6 +92,8 @@ header {
 .conteiner-menu-icon{
     height: 100%;
     text-align: right;
+    display: flex;
+    justify-content: center;
 }
 .menu-icon {
     height: 50px;
