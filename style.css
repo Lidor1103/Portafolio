@@ -81,7 +81,6 @@ h2 {
 
 @keyframes aparicion-nav {
     0%{
-        opacity: 0;
         transform: translateX(-350px);
     }
     100%{
