@@ -32,6 +32,9 @@ body {
     flex-direction: column;
     transition: 0.3s all ease;
 }
+.modonoche{
+    background-color: var(--paleta1);
+}
 body.modonoche h1{
     color: var(--paleta4);
 }
@@ -41,8 +44,8 @@ body.modonoche p{
 body.modonoche .conteiner-two i{
     color: var(--paleta3);
 }
-.modonoche{
-    background-color: var(--paleta1);
+body.modonoche .link::after{
+    background-color: var(--paleta3);
 }
 :root {
     --paleta1: #1a1e29;
