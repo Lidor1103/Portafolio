@@ -35,3 +35,12 @@ const nav = document.querySelector(".a");
                 nav.style.backgroundColor = "transparent";
             }
         });
+
+
+
+const btnMode = document.querySelector(".mode");
+
+btnMode.addEventListener("click" , () => {
+    document.body.classList.toggle("modonoche");
+    btnMode.classList.toggle("nocheactivo");
+})
