@@ -73,11 +73,20 @@ h2 {
     z-index: 1;
     border-radius: 20px;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
     backdrop-filter: blur(4px);
     background-color: rgba(47, 47, 47, .5);
     box-shadow: 0 3px 15px 3px rgba(0,0,0,.15);
+    animation: aparicion-nav 1s;
+}
+
+@keyframes aparicion-nav {
+    0%{
+        opacity: 0;
+        transform: translateX(-350px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .menu-icon {
