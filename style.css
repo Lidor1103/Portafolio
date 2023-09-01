@@ -47,6 +47,7 @@ body.modonoche .conteiner-two i{
 body.modonoche .link::after{
     background-color: var(--paleta3);
 }
+
 :root {
     --paleta1: #1a1e29;
     --paleta2: #132d46;
@@ -272,6 +273,13 @@ nav>ul>li {
     .nocheactivo::after{
         right: 0;
         left: unset;
+    }
+
+    body.modonoche .nav-ul{
+        background-color: var(--paleta5);
+    }
+    body.modonoche .menu-icon {
+        color: var(--paleta4);
     }
 }
 
