@@ -272,8 +272,7 @@ section {
         display: grid;
         max-width: 90%;
         grid-template-columns: 100%;
-        margin: 90px auto 0;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 250px);
         place-content: center;
         gap: 30px;
     }
