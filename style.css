@@ -55,7 +55,9 @@ h2 {
 /*! =================================================*/
 .conteiner-one {
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-menu {
@@ -95,8 +97,8 @@ nav>a>img {
     transition: 0.3s all;
 }
 
-nav>a>img:hover {
-    transform: scale(1.2);
+.logo:hover img {
+    transform: matrix(0,1,1,0,0,0);
 }
 
 .nav-ul {
@@ -188,44 +190,42 @@ section {
     margin-top: 0 auto;
 }
 .contenedor-welcome {
+    object-fit: fill;
     display: grid;
     max-width: 90%;
     grid-template-columns: 30% 55%;
     margin: 110px auto 0;
-    height: calc(100vh - 250px);
+    height: 400px;
     place-content: center;
     gap: 30px;
+    overflow: hidden;
 }
 
 .welcome-img {
+    max-width: 100%;
+    margin: auto;
     width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
 .welcome-img>img {
-    width: 80%;
+    height: 300px;
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
     object-fit: cover;
     min-height: 100px;
     max-width: 295px;
-}
-
-.welcome-wave {
-    width: 100%;
-    bottom: 0;
-    margin: 0;
-    position: absolute;
-}
-
-.welcome-wave>img {
-    width: 100%;
+    display: block;
 }
 
 .welcome-text {
     display: grid;
     flex-direction: column;
+    max-width: 667px;
+    min-width: 200px;
 }
 
 .welcome-text>p {
@@ -289,12 +289,13 @@ section {
 }
 
 .conteiner-two {
-    width: 100%;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
     margin: 0;
+    border-radius: 50%;
 }
 
 .conteiner-two>i {
