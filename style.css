@@ -316,9 +316,9 @@ section {
     height: 300px;
 }
 
-.welcome-img>img {
-    width: 100%;
+.welcome-img > img {
     height: 100%;
+    width: auto;
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
     object-fit: cover;
@@ -409,6 +409,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 20px auto;
+    padding-bottom: 40px;
     border-radius: 50%;
 }
 
@@ -418,13 +419,14 @@ section {
     color: var(--paleta1);
     transition: transform 0.3s;
     cursor: pointer;
+    animation: bounceAnimation 4s infinite;
 }
 
 @keyframes bounceAnimation {
-
     0%,
     100% {
         transform: translateY(0);
+        
     }
 
     50% {
@@ -432,9 +434,6 @@ section {
     }
 }
 
-.conteiner-two>i {
-    animation: bounceAnimation 4s infinite;
-}
 
 /*! =================================================*/
 /*! =================== ABOUT ================== */
