@@ -29,7 +29,8 @@ body {
     padding: 0;
     transition: 0.3s all ease;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modonoche {
@@ -285,6 +286,7 @@ h2 {
     display: grid;
     place-items: center;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .contenedor-bienvenida {
@@ -418,7 +420,7 @@ h2 {
     animation: bounceAnimation 4s infinite;
 }
 
-body.modonoche .contenedor-dash i{
+body.modonoche .contenedor-dash i {
     color: var(--paleta3);
 }
 
@@ -437,121 +439,38 @@ body.modonoche .contenedor-dash i{
 
 
 /*! =================================================*/
-/*! =================== ABOUT ================== */
+/*! =================== SECTION  ================== */
 /*! =================================================*/
-.contenedor-about {
+.segunda-vista {
     width: 100%;
-    background-color: #Ffffff;
+    height: calc(100vh - 95px);
+    display: grid;
+    place-items: center;
+}
+
+.contenedor-tecnologias {
+    text-align: center;
+    height: auto;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-image: url(img/as2.svg);
-    background-position: right;
-    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--paleta1);
 }
 
-.about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.about-text {
-    width: 40%;
-    padding-right: 25px;
-}
-
-.about-text>h2 {
-    color: var(--paleta2);
-}
-
-.about-text>p {
-    color: var(--paleta2);
-    font-family: 'Urbanist', sans-serif;
-    font-size: 18px;
-    margin-top: 15px;
-    line-height: 1.4;
-}
-
-.about-img {
-    width: 40%;
-}
-
-.about-img>img {
-    width: 100%;
-}
-
-.about-button-cv {
+.tecnologias-img {
+    display: grid;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.button-1 {
-    background-color: var(--paleta3);
-    width: 210px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 60px;
-    border: none;
-    color: white;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 20px;
-    position: relative;
-    transition: 0.3s ease-in-out;
-}
-
-.button-1:active {
-    transform: scale(0.9);
-}
-
-.button-1:hover {
-    background-color: #02a87c;
-}
-
-/*! =================================================*/
-/*! =================== SKILLS ================== */
-/*! =================================================*/
-.contenedor-skills {
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto 20px auto;
-    min-width: 100px;
-
-    height: calc(100vh - 200px);
-    width: 70%;
-    border-bottom: 0;
-    border-top: 0;
-    border-radius: 30px 30px 30px 30px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(100px);
-    /* Agrega el efecto de desenfoque */
-}
-
-
-.contenedor-skills>h2 {
-    color: var(--paleta1);
-}
-
-.skills-img {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0 0;
-    justify-content: center;
+    max-width: 60%;
+    grid-template-columns: repeat(4,minmax(0,1fr));
 }
 
 .img {
-    width: 20%;
     position: relative;
+    max-width: 32rem;
 }
 
 .img>img {
@@ -562,18 +481,18 @@ body.modonoche .contenedor-dash i{
 
 .img>span {
     position: absolute;
-    color: var(--paleta4);
-    background-color: var(--paleta1);
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    color: var(--paleta1);
+    background-color: var(--paleta4);
     padding: 10px 15px;
     border-radius: 7px;
-    transition: opacity 0.6s ease;
-    opacity: 0;
     font-family: 'Encode Sans', sans-serif;
     font-size: 13px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.6s ease;
+    opacity: 0;
+    bottom: 0;
 }
 
 .img>span::after {
@@ -583,7 +502,7 @@ body.modonoche .contenedor-dash i{
     top: -70%;
     transform: translateX(-50%);
     border: 15px solid;
-    border-color: #e40a0a00 #e40a0a00 var(--paleta1) #00000000;
+    border-color: #ffffff00 #ffffff00 var(--paleta4) #ffffff00;
 }
 
 .img>img:hover {
