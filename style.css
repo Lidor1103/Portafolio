@@ -466,11 +466,11 @@ body.modonoche .contenedor-dash i {
     margin: 0 auto;
     max-width: 60%;
     grid-template-columns: repeat(4,minmax(0,1fr));
+    min-width: 491px;
 }
 
 .img {
     position: relative;
-    max-width: 32rem;
 }
 
 .img>img {
@@ -511,4 +511,16 @@ body.modonoche .contenedor-dash i {
 
 .img:hover>span {
     opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .contenedor-tecnologias {
+        width: 90%;
+    }
+    .tecnologias-img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 150px;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
 }
