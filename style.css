@@ -365,7 +365,7 @@ h2 {
         max-width: 85%;
         grid-template-columns: 100%;
         row-gap: 15px;
-        margin: 0px auto 20px;
+        margin: 0px auto;
     }
 
     .bienvenida-img {
