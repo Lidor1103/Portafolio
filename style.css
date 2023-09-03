@@ -523,4 +523,13 @@ body.modonoche .contenedor-dash i {
         min-width: 150px;
         grid-template-columns: repeat(3,minmax(0,1fr));
     }
+    .img:hover>span {
+        display: none;
+    }
+    .img>img:hover {
+        transform: translate(0px, 0px);
+    }
+    .img>img:active {
+        transform: scale(0.75);
+    }
 }
