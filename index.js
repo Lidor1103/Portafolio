@@ -1,40 +1,13 @@
-const buttonMenu = document.querySelector(".menu-icon");
 const navUl = document.querySelector(".nav-ul");
-const navVisible = document.querySelector(".a");
+const menuIcon = document.querySelector(".menu-icon");
 
-
-buttonMenu.addEventListener("click", () => {
+menuIcon.addEventListener("click",() => {
     navUl.classList.toggle("nav-menu-visible");
-    navVisible.classList.toggle("nav-despliegue");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const navUl = document.querySelector(".nav-ul");
-
-    menuIcon.addEventListener("click", function () {
-        menuIcon.classList.toggle("fa-bars");
-        menuIcon.classList.toggle("fa-xmark");
-        navUl.classList.toggle("nav-menu-visible");
-    });
-
-    const buttonMenu = document.querySelector(".conteiner-menu-icon");
-
-    buttonMenu.addEventListener("click", () => {
-        navUl.classList.toggle("nav-menu-visible");
-    });
+    menuIcon.classList.toggle("fa-bars");
+    menuIcon.classList.toggle("fa-xmark");
 });
 
 
-const nav = document.querySelector(".a");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-        nav.style.backgroundColor = "#132d46";
-    } else {
-        nav.style.backgroundColor = "transparent";
-    }
-});
 
 
 
@@ -43,7 +16,7 @@ const logoImage = document.querySelector(".logo img");
 
 btnMode.addEventListener("click", () => {
     document.body.classList.toggle("modonoche");
-    btnMode.classList.toggle("nocheactivo");
+    btnMode.classList.toggle("nocheactivado");
 
     // Verificar si el modo noche está activado o desactivado y cambiar el src en consecuencia
     if (document.body.classList.contains("modonoche")) {
