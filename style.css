@@ -304,7 +304,7 @@ section {
     max-width: 90%;
     grid-template-columns: 30% 55%;
     margin: 110px auto 0;
-    height: 10px;
+    height: auto;
     place-content: center;
     gap: 30px;
     overflow: hidden;
