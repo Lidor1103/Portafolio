@@ -250,11 +250,12 @@ h2 {
     .link {
         font-size: 20px;
     }
-    
+
     body.modonoche .nav-ul {
         background-color: var(--paleta5);
     }
-    .mode{
+
+    .mode {
         background-color: var(--paleta3);
     }
 }
@@ -277,28 +278,31 @@ h2 {
 /*! =================================================*/
 /*! =================== SECTION ================== */
 /*! =================================================*/
-section {
+.primera-vista {
     width: 100%;
-    margin-top: 95px;
     height: calc(100vh - 95px);
+    margin-top: 95px;
+    display: grid;
+    place-items: center;
 }
 
-.contenedor-welcome {
-    object-fit: fill;
-    display: grid;
+.contenedor-bienvenida {
+    width: 100%;
     max-width: 90%;
-    grid-template-columns: 30% 55%;
-    margin: 110px auto 0;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 25% 55%;
+    column-gap: 30px;
     height: auto;
-    place-content: center;
-    gap: 30px;
-    overflow: hidden;
+    justify-content: center;
+    place-items: center;
+    object-fit: fill;
     margin-bottom: 50px;
 }
 
-.welcome-img {
+.bienvenida-img {
     max-width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     width: 100%;
     display: flex;
@@ -307,24 +311,43 @@ section {
     height: 300px;
 }
 
-.welcome-img>img {
-    height: 100%;
-    width: auto;
+.bienvenida-img>img {
+    width: 100%;
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.932));
     border-radius: 50%;
     object-fit: cover;
     min-height: 100px;
     max-width: 295px;
-    display: block;
 }
 
-.welcome-text {
+.bienvenida-text {
     max-width: 667px;
     min-width: 200px;
     height: auto;
 }
 
-.welcome-text>p {
+.bienvenida-text>h2 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9.5ch;
+    animation: escritura 2s steps(50), barra .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes escritura {
+    from {
+        width: 0
+    }
+}
+
+@keyframes barra {
+    50% {
+        border-color: transparent
+    }
+}
+
+.bienvenida-text>p {
     color: var(--paleta1);
     font-family: 'Urbanist', sans-serif;
     font-size: 23px;
@@ -332,73 +355,49 @@ section {
     line-height: 1.4;
 }
 
-.welcome-text>h2 {
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 9.5ch;
-    animation: typing 2s steps(50), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-
 @media (max-width: 500px) {
-    section {
+    .primera-vista {
         height: calc(100vh - 90px);
+        margin-top: 90px;
     }
 
-    .contenedor-welcome {
-        display: grid;
-        max-width: 90%;
+    .contenedor-bienvenida {
+        max-width: 85%;
         grid-template-columns: 100%;
-        height: auto;
-        place-content: center;
-        gap: 10px;
-        margin: 0px auto 50px;
+        row-gap: 15px;
+        margin: 0px auto 20px;
     }
 
-    .welcome-text {
+    .bienvenida-img {
+        height: 200px;
+    }
+
+    .bienvenida-img>img {
+        height: 100%;
+        width: auto;
+    }
+
+    .bienvenida-text {
         text-align: center;
-        height: auto;
     }
 
-    .welcome-text>p {
-        padding: 0;
-        font-size: 20px;
-    }
-
-    .welcome-text>h1 {
-        font-size: 60px;
-        padding-bottom: 10px;
-    }
-
-    .welcome-text>h2 {
+    .bienvenida-text>h2 {
         font-size: 30px;
         margin: 0 auto 10px;
     }
 
-    .welcome-img {
-        height: 200px;
+    .bienvenida-text>h1 {
+        font-size: 60px;
+        padding-bottom: 10px;
     }
 
-    .welcome-img>img {
-        height: 100%;
-        width: auto;
+    .bienvenida-text>p {
+        padding: 0;
+        font-size: 20px;
     }
 }
 
-.conteiner-two {
+.contenedor-dash {
     width: 50px;
     height: 50px;
     display: flex;
@@ -409,7 +408,7 @@ section {
     border-radius: 50%;
 }
 
-.conteiner-two>i {
+.contenedor-dash>i {
     margin: 0;
     font-size: 50px;
     color: var(--paleta1);
