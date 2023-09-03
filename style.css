@@ -236,7 +236,7 @@ h2 {
         transition: left 0.8s;
         border-radius: 30px;
         background-color: var(--paleta1);
-        gap: 20px;
+        gap: 10px;
     }
 
     body.modonoche .menu-icon {
