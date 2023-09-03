@@ -378,7 +378,7 @@ section {
         height: auto;
         place-content: center;
         gap: 10px;
-        margin: 0px auto 0;
+        margin: 0px auto 50px;
     }
 
     .welcome-text {
@@ -391,10 +391,11 @@ section {
     }
     .welcome-text >h1 {
         font-size: 60px;
+        padding-bottom: 10px;
     }
     .welcome-text >h2 {
         font-size: 30px;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
     .welcome-img{
         height: 200px;
