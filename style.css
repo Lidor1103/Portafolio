@@ -61,6 +61,8 @@ h1 {
     font-size: 100px;
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 25px;
+    line-height: 0.9;
 }
 
 h2 {
@@ -68,6 +70,7 @@ h2 {
     font-size: 40px;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
 }
 
 /*! =================================================*/
@@ -292,7 +295,8 @@ nav>ul>li {
 /*! =================================================*/
 section {
     width: 100%;
-    margin-top: 0 auto;
+    margin-top: 95px;
+    height: calc(100vh - 95px);
 }
 .contenedor-welcome {
     object-fit: fill;
@@ -300,14 +304,16 @@ section {
     max-width: 90%;
     grid-template-columns: 30% 55%;
     margin: 110px auto 0;
-    height: 400px;
+    height: auto;
     place-content: center;
     gap: 30px;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .welcome-img {
     max-width: 100%;
+    padding: 10px;
     margin: auto;
     width: 100%;
     display: flex;
@@ -328,8 +334,6 @@ section {
 }
 
 .welcome-text {
-    display: grid;
-    flex-direction: column;
     max-width: 667px;
     min-width: 200px;
     height: auto;
@@ -349,11 +353,6 @@ section {
     border-right: 4px solid;
     width: 9.5ch;
     animation: typing 2s steps(50), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-.welcome-text>h1 {
-    display: block;
-    white-space: nowrap;
     overflow: hidden;
 }
 @keyframes typing {
