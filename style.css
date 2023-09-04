@@ -132,14 +132,34 @@ h2 {
     transform: matrix(0, 1, 1, 0, 0, 0);
 }
 
-.nav-icon {
+.nav-despliegue {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    grid-gap: 6px;
+    outline: none;
     display: none;
 }
 
-.menu-icon {
-    cursor: pointer;
-    color: var(--paleta1);
-    font-size: 25px;
+.barra {
+    width: 25px;
+    height: 3px;
+    background-color: var(--paleta1);
+    transition: all .3s ease;
+    border-radius: 5px;
+    transform-origin: left;
+}
+
+.nav-despliegue.active .barra:first-child {
+    transform: rotate(45deg);
+}
+
+.nav-despliegue.active .barra:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-despliegue.active .barra:last-child {
+    transform: rotate(-45deg);
 }
 
 .nav-ul {
@@ -215,15 +235,14 @@ h2 {
         height: 70px;
     }
 
-    .nav-icon {
-        display: block;
+    .nav-despliegue{
+        display: flex;
+        flex-direction: column;
     }
 
-    .menu-icon:active {
-        transition: .1s ease;
-        transform: rotate(90deg);
+    body.modonoche .barra{
+        background-color: var(--paleta4);
     }
-
     .nav-ul {
         flex-direction: column;
         top: 75px;
@@ -271,33 +290,7 @@ h2 {
     color: var(--paleta3);
 }
 
-.nav-despliegue{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    background-color: transparent;
-    grid-gap: 6px;
-    outline: none;
-}
-.barra{
-    width: 25px;
-    height: 3px;
-    background-color: var(--paleta1);
-    transition: all .3s ease;
-    border-radius: 5px;
-    transform-origin: left;
-}
 
-.nav-despliegue.active .barra:first-child{
-    transform: rotate(45deg);
-}
-.nav-despliegue.active .barra:nth-child(2){
-    opacity: 0;
-}
-.nav-despliegue.active .barra:last-child{
-    transform: rotate(-45deg);
-}
 
 /*! =================================================*/
 /*! =================== SECTION ================== */
@@ -482,6 +475,7 @@ body.modonoche .contenedor-dash i {
     border-radius: 30px;
     background-color: var(--paleta1);
 }
+
 .contenedor-tecnologias>p {
     color: var(--paleta4);
     font-family: 'Urbanist', sans-serif;
@@ -490,12 +484,13 @@ body.modonoche .contenedor-dash i {
     line-height: 1.4;
 
 }
+
 .tecnologias-img {
     display: grid;
     width: 100%;
     margin: 0 auto;
     max-width: 60%;
-    grid-template-columns: repeat(5,minmax(0,1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     min-width: 491px;
 }
 
@@ -547,18 +542,22 @@ body.modonoche .contenedor-dash i {
     .contenedor-tecnologias {
         width: 90%;
     }
+
     .tecnologias-img {
         width: 100%;
         max-width: 100%;
         min-width: 150px;
-        grid-template-columns: repeat(3,minmax(0,1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
     .img:hover>span {
         display: none;
     }
+
     .img>img:hover {
         transform: translate(0px, 0px);
     }
+
     .img>img:active {
         transform: scale(0.75);
     }
