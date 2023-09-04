@@ -281,8 +281,8 @@ h2 {
 /*! =================================================*/
 .primera-vista {
     width: 100%;
-    height: calc(100vh - 95px);
-    margin-top: 95px;
+    height: calc(100vh - 150px);
+    margin-top: 150px;
     display: grid;
     place-items: center;
     padding-bottom: 50px;
