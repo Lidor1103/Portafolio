@@ -6,6 +6,14 @@ menuIcon.addEventListener("click",() => {
     menuIcon.classList.toggle("active");
 });
 
+const btnDash = document.querySelector(".contenedor-dash");
+const segundaVista = document.querySelector(".segunda-vista");
+btnDash.addEventListener("click",()=>{
+    if(segundaVista)
+    segundaVista.scrollIntoView();
+});
+
+
 
 const btnMode = document.querySelector(".mode");
 const logoImage = document.querySelector(".logo img");
