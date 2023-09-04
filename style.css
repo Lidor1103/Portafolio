@@ -2,16 +2,16 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+* {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
     list-style: none;
-
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
+
 
 hr {
     margin: 0;
@@ -235,14 +235,15 @@ h2 {
         height: 70px;
     }
 
-    .nav-despliegue{
+    .nav-despliegue {
         display: flex;
         flex-direction: column;
     }
 
-    body.modonoche .barra{
+    body.modonoche .barra {
         background-color: var(--paleta4);
     }
+
     .nav-ul {
         flex-direction: column;
         top: 75px;
