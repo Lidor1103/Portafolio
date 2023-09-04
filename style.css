@@ -75,7 +75,7 @@ h2 {
     font-size: 40px;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 
@@ -459,7 +459,14 @@ body.modonoche .contenedor-dash i {
     border-radius: 30px;
     background-color: var(--paleta1);
 }
+.contenedor-tecnologias>p {
+    color: var(--paleta4);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 23px;
+    margin: 0 auto 25px auto;
+    line-height: 1.4;
 
+}
 .tecnologias-img {
     display: grid;
     width: 100%;
