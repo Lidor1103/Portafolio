@@ -1,14 +1,10 @@
 const navUl = document.querySelector(".nav-ul");
-const menuIcon = document.querySelector(".menu-icon");
+const menuIcon = document.querySelector(".nav-despliegue");
 
 menuIcon.addEventListener("click",() => {
     navUl.classList.toggle("nav-menu-visible");
-    menuIcon.classList.toggle("fa-bars");
-    menuIcon.classList.toggle("fa-xmark");
+    menuIcon.classList.toggle("active");
 });
-
-
-
 
 
 const btnMode = document.querySelector(".mode");
@@ -25,3 +21,4 @@ btnMode.addEventListener("click", () => {
         logoImage.src = "img/logo-negativo.png";
     }
 });
+
